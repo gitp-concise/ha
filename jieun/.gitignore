@@ -1,0 +1,8 @@
+.mypy_cache/
+__pycache__/
+.DS_Store
+*.pyc
+*.ipynb
+!ML.ipynb
+!박지은_ResNet.ipynb
+!박지은_nlp.ipynb

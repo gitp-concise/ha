@@ -1,0 +1,15 @@
+version: "3"
+services:
+  db:
+    image: mysql:8.4
+    container_name: ybigta-mysql
+    restart: always
+    ports:
+      - 3310:3306
+    environment:
+      MYSQL_DATABASE: ybigta
+      MYSQL_ROOT_PASSWORD: test1234
+      TZ: Asia/Seoul
+    volumes:
+      - ./db/mysql/data:/var/lib/mysql
+      - ./db/mysql/init:/docker-entrypoint-initdb.d
